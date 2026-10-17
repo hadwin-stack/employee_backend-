@@ -105,7 +105,7 @@ app.put('/api/employeelist', async (req, res) => {
 });
 
 //! dont delete this code. it connects the front end file.
-app.get('/*any', function (req, res) {
+app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname + '/dist/Frontend/index.html'));
 });
 
