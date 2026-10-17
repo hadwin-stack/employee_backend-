@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname + '/dist/Frontend')));
 
 // Task2: create mongoDB connection 
 // MONGODB ATLAS URI STRING:
-const MONGO_URI = "mongodb+srv://<username>:<password>@cluster0.5qvkpfx.mongodb.net/";
+const MONGO_URI = "mongodb+srv://<username>:<password>@cluster0.5qvkpfx.mongodb.net/"; // Had to remove usrname and password
 
 mongoose.connect(MONGO_URI)
     .then(() => console.log('Connected to MongoDB Atlas successfully.'))
